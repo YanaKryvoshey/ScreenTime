@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#636060"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_STARTALARMservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="#F8B9EF"
+        app:cornerRadius="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:text="START ALARM Service" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_STOPALARMservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="#F8B9EF"
+        app:cornerRadius="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:text="STOP ALARM Service" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/main_LIN_DATE"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/main_TXT_DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="IN DATE:"
+                android:textColor="#FF15C4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/main_TXT_DATEFIIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="DATE"
+                android:textColor="#FF15C4"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_TXT_SPEED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="YOUR SPEED:"
+                android:textColor="#FF15C4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/main_TXT_SPEEDFIIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="SPEED"
+                android:textColor="#FF15C4"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_averageSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="#F8B9EF"
+        app:cornerRadius="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:text="see average Speed" />
+
+
+    <TextView
+        android:id="@+id/main_TXT_averageSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:textColor="#FF15C4"
+        android:text="SPEED"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:strokeColor="#F8B9EF"
+        app:cornerRadius="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:text="reStart"
+        android:layout_marginBottom="12dp"/>
+
+
+
+</LinearLayout>
